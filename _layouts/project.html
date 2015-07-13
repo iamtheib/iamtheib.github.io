@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        {% include head.html %}
+
+    </head>
+
+    <body>
+
+        <div id="main" style="display: none">
+
+            {% include navigation.html %}
+            {% include search.html %}
+
+            <div class="portfolio-modal">
+                <div class="modal-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <div class="modal-body">
+                                    <h2>{{ page.title }}</h2>
+                                    <h3 class="text-muted">{{ page.start-date }}</h3>
+                                    <hr class="star-primary">
+                                    <img src="{{ page.img | prepend: 'projects/' | asset_path }}" class="img-responsive img-centered" alt="{{ page.title }}">
+
+                                    <div class="modal-body-content">
+                                        {{ content }}
+                                    </div>
+
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="{{ page.src }}" class="btn btn-xl">View/Download Source</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ site.url }}/#contact" class="btn btn-xl">give feedback</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include footer.html %}
+            {% include js.html %}
+
+        </div>
+
+    </body>
+
+</html>

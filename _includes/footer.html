@@ -1,0 +1,43 @@
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+                <ul class="list-inline social-buttons">
+                    {% for network in site.social %}
+                    <li>
+                        <a href="{{ network.url }}">
+                            <i class="fa fa-{{ network.title }}"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
+                    {% if site.email %}
+                    <li>
+                        <script>
+                            mail2("{{ site.email.name }}",
+                                  "{{ site.email.domain }}",
+                                  "{{ site.email.tld }}",
+                                  "",
+                                  "<i class=\"fa fa-envelope\"></i>");
+                        </script>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+
+            <div class="row">
+                <span class="copyright">hacked together by {{ site.title }}</span>
+                {% if page.title %}
+                {% else %}
+                <br/>
+                <a class="btn btn-circle page-scroll" href="#page-top">
+                    <i class="fa fa-arrow-up"></i>
+                </a>
+                {% endif %}
+            </div>
+
+        </div>
+
+    </footer>

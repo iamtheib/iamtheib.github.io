@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        {% include head.html %}
+
+    </head>
+
+    <body>
+
+        <div id="main" style="display: none">
+
+            {% include navigation.html %}
+            {% include search.html %}
+
+            <section class="ramble-list">
+
+                {% if site.categories.rambles %}
+                <ul class="rambles">
+                  {% for ramble in site.categories.rambles %}
+                    <li>
+                      <a class="ramble-link" href="{{ ramble.url | prepend: site.baseurl }}">{{ ramble.title }} ({{ ramble.subtitle }})</a>
+
+                      {{ ramble.excerpt }}
+                      <a href="{{ ramble.url | prepend: site.baseurl }}">
+                        continue reading
+                      </a>
+                    </li>
+                  {% endfor %}
+                    <li>
+                      <a href="/feed/rambles.xml">
+                        <i class="fa fa-rss"></i>
+                      </a>
+                    </li>
+                </ul>
+                {% else %}
+                <p style="text-align: center">no rambles at the moment... sorry</p>
+                {% endif %}
+
+            </section>
+
+            {% include footer.html %}
+            {% include js.html %}
+
+        </div>
+
+    </body>
+
+</html>

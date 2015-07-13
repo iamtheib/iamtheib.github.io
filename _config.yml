@@ -1,0 +1,39 @@
+url: https://iamtheib.me
+
+# Site settings
+title: ibrahim sikiru (iamtheib)
+
+email:
+    name: ib
+    domain: iamtheib
+    tld:  me
+
+description: "i am ibrahim sikiru, i am a computer science student, software engineering student, a coder, a programmer, a developer and an aspiring hacker"
+
+# Social networks usernames
+social:
+  - title: github
+    url:   https://github.com/iamtheib
+  - title: linkedin
+    url:   https://linkedin.com/in/iamtheib
+
+# gems
+gems: ['jekyll-sitemap','jekyll-lunr-js-search']
+
+# jekyll-assets
+assets:
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+  js_compressor:  uglifier
+  css_compressor: sass
+
+# lunr search
+lunr_search:
+  js_dir: "assets"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title
+excerpt_separator: <!--more-->

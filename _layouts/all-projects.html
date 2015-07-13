@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        {% include head.html %}
+
+    </head>
+
+    <body>
+
+        <div id="main" style="display: none">
+
+            {% include navigation.html %}
+            {% include search.html %}
+
+            <section class="project-list">
+
+                {% if site.categories.projects %}
+                <ul class="projects">
+                  {% for project in site.categories.projects %}
+                    <li>
+                      <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+
+                      {{ project.excerpt }}
+                      <a href="{{ project.url | prepend: site.baseurl }}">
+                        continue reading
+                      </a>
+                    </li>
+                  {% endfor %}
+                    <li>
+                      <a href="/feed/projects.xml">
+                        <i class="fa fa-rss"></i>
+                      </a>
+                    </li>
+                </ul>
+                {% else %}
+                <p style="text-align: center">no projects at the moment... sorry</p>
+                {% endif %}
+
+            </section>
+
+            {% include footer.html %}
+            {% include js.html %}
+
+        </div>
+
+    </body>
+
+</html>
