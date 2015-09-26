@@ -1,21 +1,5 @@
 $(document).ready(function() {
 
-	$(window).load(function() {
-		var section = $(location.hash);
-		if (section.length) {
-			$.mobile.silentScroll(section.offset().top);
-		}
-	});
-
-	// so jquery.mobile doesn't break site
-	$.mobile.ajaxEnabled = false;
-	$.mobile.pushStateEnabled = false;
-	// Remove the loading div at the end of pages
- 	$('div.ui-loader').remove();
-
-    // Show the contents of the page after the DOM is loaded
-    $("#main").show();
-
     $(".navbar-collapse").height($("#main").height());
 
     $('.burger-menu').sidr({
@@ -37,21 +21,6 @@ $(document).ready(function() {
 
 	$('.close-menu').click(function(e) {
 		e.preventDefault();
-		$.sidr('close', 'nav-menu');
-	});
-
-	$('body').on('swipeleft', function() {
-		// Open
-		$.sidr('open', 'nav-menu');
-	});
-
-    $('body').on('swiperight', function() {
-		// Close
-		$.sidr('close', 'nav-menu');
-	});
-
-	$('body').on('tap', function() {
-		// Close
 		$.sidr('close', 'nav-menu');
 	});
 
