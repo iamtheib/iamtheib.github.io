@@ -6,6 +6,7 @@ img: thats-the-word-img.png
 start-date: May 2014
 src: https://github.com/iamtheib/thats-the-word
 language: Java
+dist:
 category: projects
 ---
 
@@ -17,8 +18,8 @@ introductory course to data structures.
 
 <!--more-->
 
-There was this phone app called 4 Pics 1 Word that I used to pass
-time with. If you don't know what that is, it's a game where you're
+There is this phone app, called 4 Pics 1 Word, that I would use to pass
+time. If you don't know what that is, it's a game where you're
 shown 4 pictures, a bunch of letters (I forgot how many), a set amount
 of spaces (where you will put your answer), and your task is to fill the
 spaces with letters from the ones you're given, to form a word that

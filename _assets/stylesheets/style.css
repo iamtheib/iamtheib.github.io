@@ -2,7 +2,6 @@
 //= require jquery.sidr.dark.css
 
 body {
-    overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #000;
 }
@@ -15,16 +14,9 @@ body {
     color: #000;
 }
 
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-    outline: 0;
-}
-
 a {
     color: #0ff;
+    text-decoration: none;
 }
 
 a:hover,
@@ -320,7 +312,6 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    outline: 0;
     color: #fff;
     font-size: 1.5em;
 }
@@ -335,7 +326,6 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-    outline: 0;
     font-size: 1.5em;
     color: #fff;
 }
@@ -353,18 +343,18 @@ fieldset[disabled] .btn-xl.active {
         padding: 25px 0;
         border: 0;
         background-color: transparent;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        -o-transition: padding .3s;
-        transition: padding .3s;
+        -webkit-transition: padding .2s;
+        -moz-transition: padding .2s;
+        -o-transition: padding .2s;
+        transition: padding .2s;
     }
 
     .navbar-default .navbar-brand {
         font-size: 1.5em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        -o-transition: all .3s;
-        transition: all .3s;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
     }
 
     .navbar-default.navbar-shrink {
@@ -406,11 +396,10 @@ fieldset[disabled] .btn-xl.active {
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
-    outline: none;
-    transition: all .3s linear;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     -o-transition: all .3s linear;
+    transition: all .3s linear;
     padding-left: 10px;
     margin-left: -10px;
 }
@@ -533,10 +522,10 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control {
-    transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -o-transition: all .3s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 section#contact .form-control:focus {
@@ -598,10 +587,10 @@ section#contact .text-danger {
     height: 100%;
     opacity: 0;
     background: rgba(0,255,255,.5);
-    transition: all .3s linear;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     -o-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -694,24 +683,16 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    outline: 0;
     border-color: #0cc;
     color: #000;
     background-color: #0cc;
 }
 
 .btn {
-    transition: all .3s linear;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     -o-transition: all .3s linear;
-}
-
-.btn:focus,
-.btn:active,
-.btn.active,
-.btn:active:focus {
-    outline: 0;
+    transition: all .3s linear;
 }
 
 .portfolio-modal .modal-content {

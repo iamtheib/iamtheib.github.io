@@ -8,6 +8,21 @@
 	<meta name="description" content="{{ site.description }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
+	<!-- Facebook Meta Info -->
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <meta property="og:image" content="{% asset_path logos/favicon-96x96.png %}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:see_also" content="{{ site.url }}">
+
+    <!-- Twitter Meta Info -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:image" content="{% asset_path logos/favicon-96x96.png %}">
+
 	<!-- Apple and iOS icons --> 
 	<link rel="apple-touch-icon" sizes="57x57" href="{% asset_path logos/apple-icon-57x57.png %}">
 	<link rel="apple-touch-icon" sizes="60x60" href="{% asset_path logos/apple-icon-60x60.png %}">
