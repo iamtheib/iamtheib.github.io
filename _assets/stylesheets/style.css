@@ -6,14 +6,6 @@ body {
     color: #000;
 }
 
-.text-muted {
-    color: #777;
-}
-
-.text-primary {
-    color: #000;
-}
-
 a {
     color: #0ff;
     text-decoration: none;
@@ -30,9 +22,12 @@ a.active {
     margin: 0 auto;
 }
 
+.btn {
+    font-family: "Indie Flower","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 .btn-primary {
     border-color: #0ff;
-    font-family: "Indie Flower","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #0ff;
     background-color: #000;
@@ -79,7 +74,6 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-burger {
-    font-family: "Indie Flower","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 1em;
     color: #fff;
 }
@@ -164,7 +158,6 @@ fieldset[disabled] .btn-burger.active {
     padding: 5px 30px;
     border: 2px solid #fff;
     border-radius: 100%!important;
-    font-family: "Indie Flower","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 40px;
     font-weight: 700;
     color: #fff;
@@ -240,7 +233,6 @@ fieldset[disabled] .btn-circle.active {
     padding: 20px 40px;
     border-color: #0ff;
     border-radius: 3px;
-    font-family: "Indie Flower","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #0ff;
@@ -322,12 +314,26 @@ fieldset[disabled] .btn-xl.active {
     font-weight: 600;
     letter-spacing: 1px;
     color: #fff;
+    outline: none;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     font-size: 1.5em;
     color: #fff;
+    background-color: transparent;
+}
+
+.navbar-default .list-inline {
+    text-align: center;
+}
+
+.navbar-default .list-inline li {
+    display: inline-block;
+}
+
+.navbar-default .list-inline li a {
+    padding: 0 15px;
 }
 
 .navbar-default .navbar-nav>.active>a,
