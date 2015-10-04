@@ -31,8 +31,13 @@
                                     </div>
 
                                     <ul class="list-inline">
+                                        {% if page.dist %}
                                         <li>
-                                            <a href="{{ page.src }}" class="btn btn-xl">View/Download Source</a>
+                                            <a href="/dist/{{ page.dist }}" class="btn btn-xl">download</a>
+                                        </li>
+                                        {% endif %}
+                                        <li>
+                                            <a href="{{ page.src }}" class="btn btn-xl">view source</a>
                                         </li>
                                         <li>
                                             <a href="{{ site.url }}/#contact" class="btn btn-xl">give feedback</a>

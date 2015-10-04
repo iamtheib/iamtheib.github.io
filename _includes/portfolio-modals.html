@@ -21,11 +21,11 @@
                             <ul class="list-inline">
                                 {% if project.dist %}
                                 <li>
-                                    <a href="{{ project.dist | asset_path }}" class="btn btn-xl">Download</a>
+                                    <a href="/dist/{{ project.dist }}" class="btn btn-xl">download</a>
                                 </li>
                                 {% endif %}
                                 <li>
-                                    <a href="{{ project.src }}" class="btn btn-xl">View Source</a>
+                                    <a href="{{ project.src }}" class="btn btn-xl">view source</a>
                                 </li>
                             </ul>
 

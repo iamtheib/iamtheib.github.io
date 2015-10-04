@@ -6,7 +6,7 @@ img: thats-the-word-img.png
 start-date: May 2014
 src: https://github.com/iamtheib/thats-the-word
 language: Java
-dist:
+dist: thats-the-word.zip
 category: projects
 ---
 
