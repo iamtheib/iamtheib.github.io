@@ -142,17 +142,17 @@ fieldset[disabled] .btn-burger.active {
 .close-menu,
 .close-search,
 .sidebar-search,
-.search-field {
+.search-container {
     float: right;
     padding: 5px;
 }
 
 .search-icon,
-.search-field {
+.search-container {
     margin-right: 15px;
 }
 
-.search-field {
+.search-container {
     padding: 0;
 }
 
@@ -392,7 +392,7 @@ fieldset[disabled] .btn-xl.active {
     padding: 15px;
 }
 
-#search-query {
+#search-field {
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -404,7 +404,7 @@ fieldset[disabled] .btn-xl.active {
     margin-left: -10px;
 }
 
-#search-query:focus {
+#search-field:focus {
     border: 2px solid #333;
 }
 
@@ -534,28 +534,28 @@ section#contact .form-control:focus {
 }
 
 section#contact .form-control::-webkit-input-placeholder,
-#search-query::-webkit-input-placeholder {
+#search-field::-webkit-input-placeholder {
     font-family: "Indie Flower","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact .form-control:-moz-placeholder,
-#search-query:-moz-placeholder {
+#search-field:-moz-placeholder {
     font-family: "Indie Flower","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact .form-control::-moz-placeholder,
-#search-query::-moz-placeholder {
+#search-field::-moz-placeholder {
     font-family: "Indie Flower","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact .form-control:-ms-input-placeholder,
-#search-query:-ms-input-placeholder {
+#search-field:-ms-input-placeholder {
     font-family: "Indie Flower","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
