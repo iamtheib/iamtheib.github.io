@@ -24,4 +24,16 @@ $(document).ready(function() {
     		closeSidebarMenu();
   	});
 
+    $('a.page-scroll').click(function(e) {
+        closeSidebarMenu();
+    });
+
+    $('.nav-side-bar .nav li a').click(function(e) {
+        closeSidebarMenu();
+    });
+
+    $('.navbar-brand').click(function(e) {
+        closeSidebarMenu();
+    });
+
 });

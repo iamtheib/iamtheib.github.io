@@ -9,7 +9,7 @@
                 <a class="navbar-brand {% if page.title %}{% else %}page-scroll{% endif %}" href="{%if page.title %}/{% endif %}#page-top">
                     <div>
                         {% image logos/favicon-32x32.png alt="iamtheib logo" %}
-                        {{ site.owner }}
+                        <span class="site-owner">{{ site.owner }}</span>
                     </div>
                 </a>
 
@@ -19,7 +19,7 @@
 
             </div>
 
-            <div id="nav-menu">
+            <div id="nav-menu" style="display:none;">
                 <a class="btn btn-burger close-menu">
                     <i class="fa fa-times"></i>
                 </a>
