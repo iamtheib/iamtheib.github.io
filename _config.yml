@@ -4,23 +4,18 @@ url: http://iamtheib.dev
 # Site settings
 title: ibrahim sikiru (iamtheib)
 owner: ibrahim sikiru
+description: "i am ibrahim sikiru, i am a computer science student, software engineering student, a coder, a programmer, a developer and an aspiring hacker"
 
+# Contact
 email:
     name: ib
     domain: iamtheib
     tld:  me
-
-description: "i am ibrahim sikiru, i am a computer science student, software engineering student, a coder, a programmer, a developer and an aspiring hacker"
-
-# Social networks usernames
 social:
-  - title: github
+  - icon: github
     url:   https://github.com/iamtheib
-  - title: linkedin
+  - icon: linkedin
     url:   https://linkedin.com/in/iamtheib
-
-# gems
-gems: ['jekyll-sitemap','jekyll-lunr-js-search']
 
 # jekyll-assets
 assets:
@@ -30,12 +25,3 @@ assets:
     - _assets/stylesheets
   js_compressor:  uglifier
   css_compressor: sass
-
-# lunr search
-lunr_search:
-  js_dir: "assets"
-
-# Build settings
-markdown: kramdown
-permalink: /:categories/:title
-excerpt_separator: <!--more-->

@@ -17,27 +17,11 @@
                     <i class="fa fa-bars"></i>
                 </a>
 
-                <a class="btn btn-burger search-icon search-btn">
-                    <i class="fa fa-search"></i>
-                </a>
-
-                <div class="col-sm-3 col-md-3 search-container" style="display: none;">
-                    <form class="navbar-form" role="search" action="#" method="get">
-                        <div class="input-group">
-                            <input type="text" id="search-field" name="q" placeholder="search" autocomplete="off">
-                        </div>
-                    </form>
-                </div>
-
             </div>
 
             <div id="nav-menu">
                 <a class="btn btn-burger close-menu">
                     <i class="fa fa-times"></i>
-                </a>
-
-                <a class="btn btn-burger sidebar-search search-btn">
-                    <i class="fa fa-search"></i>
                 </a>
 
                 <div class="nav-side-bar">
@@ -62,18 +46,18 @@
                                 {% for network in site.social %}
                                 <li>
                                     <a href="{{ network.url }}">
-                                        <i class="fa fa-{{ network.title }}"></i>
+                                        <i class="fa fa-{{ network.icon }}"></i>
                                     </a>
                                 </li>
                                 {% endfor %}
                                 {% if site.email %}
                                 <li>
                                     <script>
-                                        mail2("{{ site.email.name }}",
-                                              "{{ site.email.domain }}",
-                                              "{{ site.email.tld }}",
-                                              "",
-                                              "<i class=\"fa fa-envelope\"></i>");
+                                        mail2('{{ site.email.name }}',
+                                              '{{ site.email.domain }}',
+                                              '{{ site.email.tld }}',
+                                              '',
+                                              '<i class="fa fa-envelope"></i>');
                                     </script>
                                 </li>
                                 {% endif %}
