@@ -37,10 +37,6 @@ img::selection {
     background: 0 0;
 }
 
-.img-centered {
-    margin: 0 auto;
-}
-
 .btn {
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
@@ -474,24 +470,20 @@ section .section-heading {
     max-width: 400px;
 }
 
-#portfolio .portfolio-item .img-responsive {
-    width: 100%;
-}
-
-#portfolio .portfolio-item .portfolio-caption {
+#portfolio .portfolio-item .portfolio-content {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     background-color: #fff;
-    border-top: 3px solid rgba(0,0,0,.3);
     color: #000;
 }
 
-#portfolio .portfolio-item .portfolio-caption .title {
+#portfolio .portfolio-item .portfolio-content .title {
     margin: 0;
+    font-weight: 600;
 }
 
-#portfolio .portfolio-item .portfolio-caption .actions {
+#portfolio .portfolio-item .portfolio-content .actions {
     padding-top: 10px;
 }
 
