@@ -11,21 +11,19 @@ $(document).ready(function() {
         });
     });
 
-    // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top'
-    })
-
-    // Displaying the modal for project descriptions 
-    $('div.modal').on('show.bs.modal', function() {
-        var modal = this;
-        var hash = modal.id;
-        window.location.hash = hash;
-        window.onhashchange = function() {
-            if (!location.hash){
-                $(modal).modal('hide');
-            }
-        }
-    });
+    // lQuery for page contact form validation - requires jQuery Validate plugin
+    $('#contactForm').validate({
+		rules: {
+			_replyto: "required email",
+			message: "required"
+		},
+		messages: {
+			_replyto: {
+				required: "<span class=\"text-danger\">this field is required</span>",
+				email: "<span class=\"text-danger\">this email is not valid</span>"
+			},
+			message: "<span class=\"text-danger\">this field is required</span>"
+		}
+	});
 
 });

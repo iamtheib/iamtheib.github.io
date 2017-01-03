@@ -1,75 +1,75 @@
-	<!-- Metas and Links in Head -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Metas and Links in Head -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="{{ site.description }}">
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ site.description }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
-	<!-- Facebook Meta Info -->
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-    <meta property="og:image" content="{% asset_path logos/favicon-96x96.png %}">
-    <meta property="og:description" content="{{ site.description }}">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:see_also" content="{{ site.url }}">
+<!-- Facebook Meta Info -->
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+<meta property="og:image" content="{% asset_path logos/favicon-96x96.png %}">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:see_also" content="{{ site.url }}">
 
-    <!-- Twitter Meta Info -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
-    <meta name="twitter:description" content="{{ site.description }}">
-    <meta name="twitter:image" content="{% asset_path logos/favicon-96x96.png %}">
+<!-- Twitter Meta Info -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+<meta name="twitter:description" content="{{ site.description }}">
+<meta name="twitter:image" content="{% asset_path logos/favicon-96x96.png %}">
 
-	<!-- Apple and iOS icons --> 
-	<link rel="apple-touch-icon" sizes="57x57" href="{% asset_path logos/apple-icon-57x57.png %}">
-	<link rel="apple-touch-icon" sizes="60x60" href="{% asset_path logos/apple-icon-60x60.png %}">
-	<link rel="apple-touch-icon" sizes="72x72" href="{% asset_path logos/apple-icon-72x72.png %}">
-	<link rel="apple-touch-icon" sizes="76x76" href="{% asset_path logos/apple-icon-76x76.png %}">
-	<link rel="apple-touch-icon" sizes="114x114" href="{% asset_path logos/apple-icon-114x114.png %}">
-	<link rel="apple-touch-icon" sizes="120x120" href="{% asset_path logos/apple-icon-120x120.png %}">
-	<link rel="apple-touch-icon" sizes="144x144" href="{% asset_path logos/apple-icon-144x144.png %}">
-	<link rel="apple-touch-icon" sizes="152x152" href="{% asset_path logos/apple-icon-152x152.png %}">
-	<link rel="apple-touch-icon" sizes="180x180" href="{% asset_path logos/apple-icon-180x180.png %}">
+<!-- Apple and iOS icons -->
+<link rel="apple-touch-icon" sizes="57x57" href="{% asset_path logos/apple-icon-57x57.png %}">
+<link rel="apple-touch-icon" sizes="60x60" href="{% asset_path logos/apple-icon-60x60.png %}">
+<link rel="apple-touch-icon" sizes="72x72" href="{% asset_path logos/apple-icon-72x72.png %}">
+<link rel="apple-touch-icon" sizes="76x76" href="{% asset_path logos/apple-icon-76x76.png %}">
+<link rel="apple-touch-icon" sizes="114x114" href="{% asset_path logos/apple-icon-114x114.png %}">
+<link rel="apple-touch-icon" sizes="120x120" href="{% asset_path logos/apple-icon-120x120.png %}">
+<link rel="apple-touch-icon" sizes="144x144" href="{% asset_path logos/apple-icon-144x144.png %}">
+<link rel="apple-touch-icon" sizes="152x152" href="{% asset_path logos/apple-icon-152x152.png %}">
+<link rel="apple-touch-icon" sizes="180x180" href="{% asset_path logos/apple-icon-180x180.png %}">
 
-	<!-- Android icon --> 
-	<link rel="icon" type="image/png" sizes="192x192"  href="{% asset_path logos/android-icon-192x192.png %}">
+<!-- Android icon -->
+<link rel="icon" type="image/png" sizes="192x192"  href="{% asset_path logos/android-icon-192x192.png %}">
 
-	<!-- Some other icons --> 
-	<link rel="icon" type="image/png" sizes="32x32" href="{% asset_path logos/favicon-32x32.png %}">
-	<link rel="icon" type="image/png" sizes="96x96" href="{% asset_path logos/favicon-96x96.png %}">
-	<link rel="icon" type="image/png" sizes="16x16" href="{% asset_path logos/favicon-16x16.png %}">
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-	<link rel="manifest" href="{% asset_path logos/manifest.json %}">
+<!-- Some other icons -->
+<link rel="icon" type="image/png" sizes="32x32" href="{% asset_path logos/favicon-32x32.png %}">
+<link rel="icon" type="image/png" sizes="96x96" href="{% asset_path logos/favicon-96x96.png %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% asset_path logos/favicon-16x16.png %}">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="manifest" href="{% asset_path logos/manifest.json %}">
 
-	<!-- Microsoft application meta and icon --> 
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="{% asset_path logos/ms-icon-144x144.png %}">
+<!-- Microsoft application meta and icon -->
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="{% asset_path logos/ms-icon-144x144.png %}">
 
-	<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-	<!-- Font-Awesome CSS -->
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- Font-Awesome CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-	<!-- Custom CSS -->
-	{% stylesheet style %}
+<!-- Custom CSS -->
+{% stylesheet style %}
 
-	<!-- Custom Fonts -->
-    <link href='//fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic' rel='stylesheet' type='text/css'>
-   <link href='//fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+<!-- Custom Fonts -->
+<link href='//fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
 
-	<!-- Script that needs to be included before anything else --> 
-	{% javascript headscript %}
+<!-- Script that needs to be included before anything else -->
+{% javascript headscript %}
 
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->

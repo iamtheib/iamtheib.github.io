@@ -1,15 +1,4 @@
 //= require pace.css
-//= require jquery.sidr.dark.css
-
-::-moz-selection {
-    text-shadow: none;
-    background: #fff;
-}
-
-::selection {
-    text-shadow: none;
-    background: #fff;
-}
 
 body {
     color: #fff;
@@ -29,80 +18,12 @@ a.active {
     color: #fff;
 }
 
-img::-moz-selection {
-    background: 0 0;
-}
-
-img::selection {
-    background: 0 0;
-}
-
 .btn {
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;
     font-family: 'Oleo Script', cursive;
-}
-
-.btn-burger {
-    font-size: 1em;
-    color: #fff;
-    margin-top: 10px;
-}
-
-.btn-burger:hover,
-.btn-burger:focus,
-.btn-burger:active,
-.btn-burger.active,
-.open .dropdown-toggle.btn-burger {
-    color: #fff;
-    font-size: 1.5em;
-}
-
-.btn-burger:active,
-.btn-burger.active,
-.open .dropdown-toggle.btn-burger {
-    background-image: none;
-}
-
-.btn-burger.disabled,
-.btn-burger[disabled],
-fieldset[disabled] .btn-burger,
-.btn-burger.disabled:hover,
-.btn-burger[disabled]:hover,
-fieldset[disabled] .btn-burger:hover,
-.btn-burger.disabled:focus,
-.btn-burger[disabled]:focus,
-fieldset[disabled] .btn-burger:focus,
-.btn-burger.disabled:active,
-.btn-burger[disabled]:active,
-fieldset[disabled] .btn-burger:active,
-.btn-burger.disabled.active,
-.btn-burger[disabled].active,
-fieldset[disabled] .btn-burger.active {
-    border-color: #fff;
-    background-color: #fff;
-}
-
-.btn-burger .badge {
-    color: #fff;
-    background-color: #fff;
-}
-
-@media(min-width:767px) {
-    .btn-burger {
-        font-size: 1.5em;
-        margin-top: 5px;
-    }
-
-    .btn-burger:hover,
-    .btn-burger:focus,
-    .btn-burger:active,
-    .btn-burger.active,
-    .open .dropdown-toggle.btn-burger {
-        font-size: 2em;
-    }
 }
 
 .btn-circle {
@@ -122,15 +43,13 @@ fieldset[disabled] .btn-burger.active {
 .btn-circle:hover,
 .btn-circle:focus,
 .btn-circle:active,
-.btn-circle.active,
-.open .dropdown-toggle.btn-circle {
+.btn-circle.active {
     color: #fff;
     background: rgba(255,255,255,.1);
 }
 
 .btn-circle:active,
-.btn-cirle.active,
-.open .dropdown-toggle.btn-circle {
+.btn-cirle.active {
     background-image: none;
 }
 
@@ -189,16 +108,14 @@ fieldset[disabled] .btn-circle.active {
 .btn-custom:hover,
 .btn-custom:focus,
 .btn-custom:active,
-.btn-custom.active,
-.open .dropdown-toggle.btn-custom {
+.btn-custom.active {
     border-color: #000;
     color: #000;
     background-color: #fff;
 }
 
 .btn-custom:active,
-.btn-custom.active,
-.open .dropdown-toggle.btn-custom {
+.btn-custom.active {
     background-image: none;
 }
 
@@ -239,168 +156,6 @@ fieldset[disabled] .btn-custom.active {
 
 .site-owner {
     font-family: 'Walter Turncoat', cursive;
-}
-
-.navbar .navbar-default .navbar-fixed-top {
-    z-index: 99;
-}
-
-.navbar-default {
-    border-color: transparent;
-    background-color: #000;
-}
-
-.navbar-header {
-    width: 100%;
-    text-align: center;
-}
-
-.navbar-default .navbar-brand {
-    color: #fff;
-    font-size: 1em;
-    padding: 5px;
-}
-
-.navbar-default .navbar-brand span {
-    vertical-align: middle;
-}
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:active,
-.navbar-default .navbar-brand.active {
-    color: #fff;
-    font-size: 1.5em;
-}
-
-.navbar-default .nav li a {
-    font-family: 'Oleo Script', cursive;
-    font-size: 1.5em;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #fff;
-    outline: none;
-}
-
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus,
-.navbar-default .nav li.active a {
-    font-size: 2em;
-}
-
-.navbar-default .list-inline {
-    text-align: center;
-}
-
-.navbar-default .list-inline li {
-    display: inline-block;
-}
-
-.navbar-default .list-inline li a {
-    padding: 0 15px;
-}
-
-@media(min-width:767px) {
-    .navbar-default {
-        padding: 25px 0;
-        border: 0;
-        background-color: transparent;
-        -webkit-transition: padding .2s;
-        -moz-transition: padding .2s;
-        -o-transition: padding .2s;
-        transition: padding .2s;
-    }
-
-    .navbar-default .navbar-brand {
-        font-size: 1.5em;
-        -webkit-transition: all .2s;
-        -moz-transition: all .2s;
-        -o-transition: all .2s;
-        transition: all .2s;
-    }
-
-    .navbar-default.navbar-shrink {
-        padding: 10px 0;
-        background-color: #000;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-    }
-
-    .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
-
-    .navbar-default .navbar-brand:hover,
-    .navbar-default .navbar-brand:focus,
-    .navbar-default .navbar-brand:active,
-    .navbar-default .navbar-brand.active {
-        font-size: 2.5em;
-    }
-}
-
-.burger-menu {
-    float: right;
-    padding: 5px;
-}
-
-.sidr {
-    background-color: #080808;
-    font-family: 'Oleo Script', cursive;
-    box-shadow: inset 0 0 4px 0 rgba(255,255,255,.3);
-    padding: 0 15px;
-}
-
-.sidr ul,
-.sidr ul li {
-    border: none !important;
-}
-
-.sidr li a {
-    text-align: center;
-}
-
-.sidr li a:hover,
-.sidr li.active a {
-    background-color: transparent;
-}
-
-.sidr li a:hover {
-    border: 2px solid #fff;
-    border-radius: 6px;
-}
-
-.sidr li.active a,
-.sidr li.active a:hover {
-    border: 2px solid #000;
-    border-radius: 6px;
-    background-color: #fff;
-    color: #000;
-}
-
-ul.social-buttons {
-    margin-bottom: 0;
-}
-
-ul.social-buttons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 1.5em;
-    line-height: 40px;
-    border-color: #fff;
-    color: #fff;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-}
-
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-    border-color: #fff;
-    color: #000;
-    background-color: #fff;
 }
 
 header {
@@ -465,37 +220,33 @@ section .section-heading {
     font-weight: 700;
 }
 
-#portfolio .portfolio-item {
-    margin-top: 20px;
-    max-width: 400px;
-}
-
-#portfolio .portfolio-item .portfolio-content {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    background-color: #fff;
-    color: #000;
-}
-
-#portfolio .portfolio-item .portfolio-content .title {
-    margin: 0;
-    font-weight: 600;
-}
-
-#portfolio .portfolio-item .portfolio-content .actions {
-    padding-top: 10px;
-}
-
 section#contact .section-subheading {
     font-size: 1.2em;
     font-weight: 400;
 }
 
-section#contact ul {
-    margin-bottom: 25px;
-    list-style-type: square;
-    list-style-position: outside;
+section#contact ul.social-buttons li a {
+    display: block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 1.6em;
+    line-height: 40px;
+    border-color: #fff;
+    color: #fff;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+section#contact ul.social-buttons li a:hover,
+section#contact ul.social-buttons li a:focus,
+section#contact ul.social-buttons li a:active {
+    border-color: #fff;
+    color: #000;
+    background-color: #fff;
 }
 
 section#contact .form-group {

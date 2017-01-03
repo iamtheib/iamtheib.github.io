@@ -1,12 +1,10 @@
-	<!-- JQuery -->
-	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- JQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 
-	<!-- Bootstrap JS -->
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-	<!-- Custom JS with Plugins -->
-	{% if page.title %}
-	{% javascript minimumscript %}
-	{% else %}
-	{% javascript fullscript %}
-	{% endif %}
+<!-- Custom JS with Plugins -->
+{% unless page.title %}
+{% javascript fullscript %}
+{% endunless %}
